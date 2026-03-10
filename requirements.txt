@@ -1,3 +1,4 @@
 pandas
-matplotlib>=1.39
+streamlit==1.19.0
+altair<5
 streamlit
