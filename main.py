@@ -1,5 +1,5 @@
 import pandas as pd
-import matplotlib.pyplot as plt
+
 from datetime import datetime
 import os
 
@@ -101,6 +101,7 @@ def terminal_app():
     print("Profit moyen :", profit_moyen)
 
     if not cumulative_profit.empty:
+        import matplotlib.pyplot as plt
         plt.figure(figsize=(10, 5))
         plt.plot(range(1, len(cumulative_profit) + 1), cumulative_profit, marker="o")
         plt.title("Profit cumulatif")
